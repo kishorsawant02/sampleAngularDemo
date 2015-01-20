@@ -1,0 +1,61 @@
+#container {
+	border: 2px solid black;
+	color: green;
+	width: 100%;
+	height: 600px;
+	background: none repeat scroll 0 0 aliceblue;
+}
+
+#menuBar {
+	float: left;
+	width: 20%;
+	height: 600px;
+	background: white;
+}
+
+#rightPanel {
+	float: right;
+	width: 79%;
+	height: 600px;
+}
+
+#statusBar {
+	background: none repeat scroll 0 0 white;
+	height: 60px;
+	margin-left: -13px;
+}
+
+#renderContent {
+	height: 84%;
+}
+
+#menuBar ul li {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	list-style: outside none none;
+	margin-top: 10px;
+	text-align: center;
+	width: 115%;
+}
+
+#tabs {
+    display: inline-flex;
+    float: left;
+    list-style: outside none none;
+    padding: 11px;
+    text-align: center;
+}
+#tabs li{
+    border: 1px solid;
+    padding	: 23px;
+	
+}
+.selected {
+	background: none repeat scroll 0 0 aliceblue;
+}
+
+footer,header {
+	height: 60px;
+	border: 2px solid black;
+}

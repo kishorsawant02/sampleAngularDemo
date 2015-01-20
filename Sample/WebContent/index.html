@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="sample">
+<head>
+<meta charset="ISO-8859-1">
+<title>Demo</title>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.9/angular.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.js"></script>
+<script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/router.js"></script>
+<script type="text/javascript" src="app/newExperiment/NewExp.js"></script>
+<script type="text/javascript" src="app/allExperiment/AllExp.js"></script>
+<script type="text/javascript" src="app/newExperiment/expDetails/ExpDetails.js"></script>
+<script type="text/javascript" src="app/about/About.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header> Edison</header>
+	<section id="container" ng-controller="menuSelection">
+		<div id="menuBar">
+			<ul>
+				<li ui-sref="allExp" style=" margin-top: -16px;" class="selected"><a>All Experiment</a></li>
+				<li ui-sref="newExp">New Experiment</li>
+				<li ui-sref="about">About</li>
+			</ul>
+		</div>
+		<div id="rightPanel">
+			<div ui-view id="renderContent"></div>
+		</div>
+	</section>
+	<footer>Vbi</footer>
+</body>
+</html>
